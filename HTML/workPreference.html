@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Preference</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="headerContainer">
+            <div class="photoContainer">
+                <span>photo</span>
+            </div>
+            <div class="loginContainer">
+                <span>Already have an account? </span>
+                <a href="loginPage.html">Login</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="progressBarContainer">
+            <div class="progressBar">
+                <div class="step">1</div>
+                <span class="stepLabel">Basic Info</span>
+            </div>
+            <div class="progressStep">
+                <span class="stepSeparator">—</span>
+                <div class="stepNumber">2</div>
+                <span class="stepLabel">Location Info</span>
+            </div>
+            <div class="progressStep">
+                <span class="stepSeparator">—</span>
+                <div class="stepNumber">3</div>
+                <span class="stepLabel">Disability Info</span>
+            </div>
+            <div class="progressStep">
+                <span class="stepSeparator">—</span>
+                <div class="stepNumber">4</div>
+                <span class="stepLabel">Work Preferences</span>
+            </div>
+            <div class="progressStep">
+                <span class="stepSeparator">—</span>
+                <div class="stepNumber">5</div>
+                <span class="stepLabel">Additional Info</span>
+            </div>
+            <div class="progressStep">
+                <span class="stepSeparator">—</span>
+                <div class="stepNumber">6</div>
+                <span class="stepLabel">Confirmation</span>
+            </div>
+        </div>
+        <div class="workPreferenceContainer">
+            <h1>What Type of Work Are You Looking For?</h1>
+            <p>Let us know your preferred job field or type of work you’re seeking.</p>
+            <form action="additionalInfo.html">
+                <div class="inputContainer">
+                    <label for="jobTitles">Preferred Job Titles</label>
+                    <input type="text" id="jobTitles" name="jobTitles" class="inputField" placeholder="Enter the job title or field you are interested in">
+                </div>
+                <div class="inputContainer">
+                    <label for="industry">Industry</label>
+                    <select id="industry" name="industry" class="inputField">
+                        <option value="">Select your preferred industry</option>
+                        <option value="tech">Tech</option>
+                        <option value="finance">Finance</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="inputContainer">
+                    <label for="employmentType">Employment Type</label>
+                    <select id="employmentType" name="employmentType" class="inputField">
+                        <option value="">Choose your preferred employment type</option>
+                        <option value="full-time">Full-time</option>
+                        <option value="part-time">Part-time</option>
+                        <option value="contract">Contract</option>
+                        <option value="freelance">Freelance</option>
+                    </select>
+                </div>
+                <div class="inputContainer">
+                    <label for="workEnvironment">Work Environment</label>
+                    <select id="workEnvironment" name="workEnvironment" class="inputField">
+                        <option value="">Choose your preferred work environment</option>
+                        <option value="office">Office</option>
+                        <option value="remote">Remote</option>
+                        <option value="hybrid">Hybrid</option>
+                    </select>
+                </div>
+                <button type="submit" class="nextButton">NEXT</button>
+                <button type="button" class="backButton" onclick="window.location.href='disabilityInfo.html'">BACK</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

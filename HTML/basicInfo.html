@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Info</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="headerContainer">
+            <div class="photoContainer">
+                <span>photo</span>
+            </div>
+            <div class="loginContainer">
+                <span>Already have an account? </span>
+                <a href="loginPage.html">Login</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="progressBarContainer">
+            <div class="progressBar">
+                <div class="step">1</div>
+                <span class="stepLabel">Basic Info</span>
+            </div>
+            <div class="progressStep">
+                <span class="stepSeparator">—</span>
+                <div class="stepNumber">2</div>
+                <span class="stepLabel">Location Info</span>
+            </div>
+            <div class="progressStep">
+                <span class="stepSeparator">—</span>
+                <div class="stepNumber">3</div>
+                <span class="stepLabel">Disability Info</span>
+            </div>
+            <div class="progressStep">
+                <span class="stepSeparator">—</span>
+                <div class="stepNumber">4</div>
+                <span class="stepLabel">Work Preferences</span>
+            </div>
+            <div class="progressStep">
+                <span class="stepSeparator">—</span>
+                <div class="stepNumber">5</div>
+                <span class="stepLabel">Additional Info</span>
+            </div>
+            <div class="progressStep">
+                <span class="stepSeparator">—</span>
+                <div class="stepNumber">6</div>
+                <span class="stepLabel">Confirmation</span>
+            </div>
+        </div>
+        <div class="basicInfoContainer">
+            <h1>Let’s get started!</h1>
+            <p>Please provide some basic information to create your account.</p>
+            <form action="/HTML/locationInfo.html">
+                <div class="inputContainer">
+                    <label for="firstName">FirstName</label>
+                    <input type="text" id="firstName" name="firstName" class="inputField">
+                </div>
+                <div class="inputContainer">
+                    <label for="middleName">MiddleName</label>
+                    <input type="text" id="middleName" name="middleName" class="inputField">
+                </div>
+                <div class="inputContainer">
+                    <label for="lastName">LastName</label>
+                    <input type="text" id="lastName" name="lastName" class="inputField">
+                </div>
+                <div class="inputContainer">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" class="inputField">
+                </div>
+                <div class="inputContainer">
+                    <label for="confirmPassword">ConfirmPassword</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" class="inputField">
+                </div>
+                <button type="submit" class="submitButton">NEXT</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

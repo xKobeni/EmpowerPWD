@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additional Info Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="headerContainer">
+            <div class="photoContainer">
+                <span>photo</span>
+            </div>
+            <div class="loginContainer">
+                <span>Already have an account? </span>
+                <a href="/HTML/loginPage.html">Login</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="progressBarContainer">
+            <div class="progressBar">
+                <div class="step">1</div>
+                <span class="stepLabel">Basic Info</span>
+            </div>
+            <div class="progressStep">
+                <span class="stepSeparator">—</span>
+                <div class="stepNumber">2</div>
+                <span class="stepLabel">Location Info</span>
+            </div>
+            <div class="progressStep">
+                <span class="stepSeparator">—</span>
+                <div class="stepNumber">3</div>
+                <span class="stepLabel">Disability Info</span>
+            </div>
+            <div class="progressStep">
+                <span class="stepSeparator">—</span>
+                <div class="stepNumber">4</div>
+                <span class="stepLabel">Work Preferences</span>
+            </div>
+            <div class="progressStep">
+                <span class="stepSeparator">—</span>
+                <div class="stepNumber">5</div>
+                <span class="stepLabel">Additional Info</span>
+            </div>
+            <div class="progressStep">
+                <span class="stepSeparator">—</span>
+                <div class="stepNumber">6</div>
+                <span class="stepLabel">Confirmation</span>
+            </div>
+        </div>
+        <div class="additionalInfoContainer">
+            <h1>Upload Your Resume (Optional)</h1>
+            <p>Attach your resume to help employers find you faster. You can skip this step if you’d prefer to do it later.</p>
+            <div class="resumeUploadContainer">
+                <input type="file" id="resume" name="resume" class="resumeInput">
+                <i class="fas fa-times"></i>
+                <p class="supportedFormats">Supported Formats: "Max file size 5MB, formats: PDF, DOC, DOCX"</p>
+            </div>
+            <button type="button" class="nextButton" onclick="window.location.href='confirmation.html'">NEXT</button>
+            <button type="button" class="backButton" onclick="window.location.href='additionalInfo.html'">BACK</button>
+        </div>
+    </main>
+</body>
+</html>
